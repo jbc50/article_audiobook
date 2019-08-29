@@ -2,7 +2,8 @@
 if (!require("pacman")) install.packages("pacman")
 pacman::p_load(pdftools,stringr, plyr, dplyr, tidyr, readtext)
 
-library(stringr,pdftools,plyr,dplyr,tidyr,readtext)
+packages <- c("stringr", "pdftools", "plyr", "dplyr", "tidyr", "readtext")
+lapply(packages, library, character.only = TRUE)
 
 
 ### READING IN FILES ####
